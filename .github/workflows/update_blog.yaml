@@ -27,8 +27,8 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote add url_pat https://${{ secrets.GLPAT }}@github.com/ssion03/velog_save.git
-        git push url_pat master
+    
+        git push https://${{ secrets.VL_TOKEN }}@github.com/ssion03/velog_save.git
 
     - name: Set up Python
       uses: actions/setup-python@v3  # 최신 버전으로 업데이트
