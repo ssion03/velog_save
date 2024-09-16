@@ -30,7 +30,7 @@ feed = feedparser.parse(rss_url)
 print(f"Feed title: {feed.feed.title}")
 print(f"Feed link: {feed.feed.link}")
 print(f"Feed description: {feed.feed.description}")
-print(f"Feed entrice: {feed.feed.entry}")
+print(f"Feed entrice: {feed.feed["entries"])
 
 # 각 글을 파일로 저장하고 커밋
 for entry in feed.entries:
