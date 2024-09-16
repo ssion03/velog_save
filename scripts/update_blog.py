@@ -28,6 +28,8 @@ repo = git.Repo(repo_path)
 # RSS 피드 파싱
 feed = feedparser.parse(rss_url)
 print(f"Feed title: {feed.feed.title}")
+print(f"Feed link: {feed.feed.link}")
+print(f"Feed description: {feed.feed.description}")
 
 
 # 각 글을 파일로 저장하고 커밋
