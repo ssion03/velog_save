@@ -28,7 +28,7 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git push https://${{ secrets.velog_PAT }}@github.com/ssion03/velog_save.git
+        git push https://${{ secrets.VELOG_PAT }}@github.com/ssion03/velog_save.git
 
     - name: Set up Python
       uses: actions/setup-python@v3
